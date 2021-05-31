@@ -1,0 +1,82 @@
+.game__field, .title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.title {
+  padding: 0;
+}
+@media (min-width: 300px) {
+  .title {
+    background-color: yellow;
+  }
+}
+@media (min-width: 400px) {
+  .title {
+    background-color: yellowgreen;
+  }
+}
+
+.game {
+  position: relative;
+  width: 180px;
+  border: 2px solid black;
+}
+.game__field {
+  display: flex;
+  flex-wrap: wrap;
+}
+.game__cell {
+  height: 60px;
+  width: 60px;
+  box-sizing: border-box;
+  border: 1px dashed #000;
+}
+.game__player {
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  background-color: #000;
+}
+.game__player--row--1 {
+  top: 6px;
+}
+.game__player--row--2 {
+  top: 66px;
+}
+.game__player--row--3 {
+  top: 126px;
+}
+.game__player--row--4 {
+  top: 186px;
+}
+.game__player--row--5 {
+  top: 246px;
+}
+.game__player--col--1 {
+  left: 6px;
+}
+.game__player--col--2 {
+  left: 66px;
+}
+.game__player--col--3 {
+  left: 126px;
+}
+.game__player--color--red {
+  background-color: #f00;
+}
+.game__player--color--yellow {
+  background-color: #ff0;
+}
+.game__player--color--greenyellow {
+  background-color: #adff2f;
+}
+.game__player--color--blue {
+  background-color: #00f;
+}
+
+/*# sourceMappingURL=styles.css.map */
